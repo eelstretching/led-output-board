@@ -90,7 +90,7 @@
 	(footprint "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
 		(layer "F.Cu")
 		(uuid "0ef31222-bced-4d9e-8bdd-013df3d9795c")
-		(at 125.86 76.85)
+		(at 127.2425 80.396786)
 		(property "Reference" "F2"
 			(at 0 -4 0)
 			(layer "F.SilkS")
@@ -407,7 +407,7 @@
 	(footprint "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
 		(layer "F.Cu")
 		(uuid "21f988aa-093e-48bc-8a35-22a8a9e5269f")
-		(at 125.86 151.15)
+		(at 127.16 151.2)
 		(property "Reference" "F8"
 			(at 0 -4 0)
 			(layer "F.SilkS")
@@ -724,7 +724,7 @@
 	(footprint "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
 		(layer "F.Cu")
 		(uuid "22ecf9fc-573f-4995-a9f4-7375ec56b40e")
-		(at 125.86 64.6175)
+		(at 127.2425 68.757143)
 		(property "Reference" "F1"
 			(at 0 -4 0)
 			(layer "F.SilkS")
@@ -1041,7 +1041,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "25323787-de0f-49c5-81d4-8a8af472bc0b")
-		(at 102.83 130.15)
+		(at 98.41 119.7)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=2.54mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Vertical pin pitch 2.54mm 0.167W length 3.6mm diameter 1.6mm")
 		(property "Reference" "R6"
@@ -1433,7 +1433,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "2559bcdc-833b-4d68-adda-7b6ec72e955a")
-		(at 102.83 142.5)
+		(at 98.41 124.95)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=2.54mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Vertical pin pitch 2.54mm 0.167W length 3.6mm diameter 1.6mm")
 		(property "Reference" "R7"
@@ -1825,7 +1825,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "2f8b18c3-72a5-4a14-8c81-f4dd09de7b76")
-		(at 102.83 68.2)
+		(at 98.41 92.05)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=2.54mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Vertical pin pitch 2.54mm 0.167W length 3.6mm diameter 1.6mm")
 		(property "Reference" "R1"
@@ -2217,7 +2217,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "449787cf-1e4e-4c53-999e-d053f00584cf")
-		(at 102.83 93.35)
+		(at 98.41 103.85)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=2.54mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Vertical pin pitch 2.54mm 0.167W length 3.6mm diameter 1.6mm")
 		(property "Reference" "R3"
@@ -2609,7 +2609,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "506b81db-7526-4d14-b9e6-2497fb65169a")
-		(at 102.83 105.35)
+		(at 98.41 110.05)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=2.54mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Vertical pin pitch 2.54mm 0.167W length 3.6mm diameter 1.6mm")
 		(property "Reference" "R4"
@@ -3001,7 +3001,7 @@
 	(footprint "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
 		(layer "F.Cu")
 		(uuid "583ad0c8-b2c0-4da6-a401-e5fd3aa15a83")
-		(at 137.6175 117.781786 -90)
+		(at 137.7 119.53449 -90)
 		(property "Reference" "J7"
 			(at 0 -4 90)
 			(layer "F.SilkS")
@@ -3342,7 +3342,7 @@
 	(footprint "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
 		(layer "F.Cu")
 		(uuid "61aad77e-b2ab-4bf3-a4c2-e622aa9c57e5")
-		(at 137.6175 92.996071 -90)
+		(at 137.7 95.917245 -90)
 		(property "Reference" "J5"
 			(at 0 -4 90)
 			(layer "F.SilkS")
@@ -3683,7 +3683,7 @@
 	(footprint "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "62ca035c-2a2c-4ab7-895a-ddfa1c4818c4")
-		(at 66.55 104.07)
+		(at 67.25 103.17)
 		(descr "Through hole IDC box header, 2x08, 2.54mm pitch, DIN 41651 / IEC 60603-13, double rows, https://docs.google.com/spreadsheets/d/16SsEcesNF15N3Lb4niX7dcUr-NY5_MFPQhobNuNppn4/edit#gid=0")
 		(tags "Through hole vertical IDC box header THT 2x08 2.54mm double row")
 		(property "Reference" "J2"
@@ -4231,9 +4231,9 @@
 	(footprint "easyeda2kicad:CONN-TH_2P-P9.50_DBT50G-9.5-2P"
 		(layer "F.Cu")
 		(uuid "66a363bd-3bea-4048-94e9-ca0e4e9460d9")
-		(at 107.9 46.65)
+		(at 103.85 68.65 90)
 		(property "Reference" "J1"
-			(at 0 -4 0)
+			(at 0 -4 90)
 			(layer "F.SilkS")
 			(uuid "dedd7224-4036-4fc3-a341-049b6972990a")
 			(effects
@@ -4244,7 +4244,7 @@
 			)
 		)
 		(property "Value" "DBT50G-9.5-2P"
-			(at 0 4 0)
+			(at 0 4 90)
 			(layer "F.Fab")
 			(uuid "03ba6a8a-88fb-4c32-a241-91874563abb4")
 			(effects
@@ -4255,7 +4255,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ac8a696b-b15a-41e8-8c4a-4e282a06fd07")
@@ -4266,7 +4266,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "01bee1f5-a956-4e50-a4fe-76867dc43e9e")
@@ -4277,7 +4277,7 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "657ce2f3-cf75-421d-8f75-abfeb6b21898")
@@ -4299,26 +4299,6 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -10.25 -4.3)
-			(end -10.25 11.9)
-			(stroke
-				(width 0.25)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6e0cc883-062c-473f-8514-517bc85f93ad")
-		)
-		(fp_line
-			(start -10.25 11.9)
-			(end 10.25 11.9)
-			(stroke
-				(width 0.25)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "2b6c4797-ef15-4b30-9b49-e91e4a3f3407")
-		)
-		(fp_line
 			(start 10.25 -4.3)
 			(end -10.25 -4.3)
 			(stroke
@@ -4329,6 +4309,16 @@
 			(uuid "ebba2c82-a58d-4b04-904b-b3377ad7b2da")
 		)
 		(fp_line
+			(start -10.25 -4.3)
+			(end -10.25 11.9)
+			(stroke
+				(width 0.25)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6e0cc883-062c-473f-8514-517bc85f93ad")
+		)
+		(fp_line
 			(start 10.25 11.9)
 			(end 10.25 -4.3)
 			(stroke
@@ -4337,6 +4327,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "ebddfdc3-5b09-47d7-871b-7fbb445a2aa6")
+		)
+		(fp_line
+			(start -10.25 11.9)
+			(end 10.25 11.9)
+			(stroke
+				(width 0.25)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2b6c4797-ef15-4b30-9b49-e91e4a3f3407")
 		)
 		(fp_circle
 			(center -10.25 -4.3)
@@ -4350,26 +4350,6 @@
 			(uuid "22996d2f-1060-45f8-9d04-b448b03155b2")
 		)
 		(fp_line
-			(start -10.25 -4.3)
-			(end 10.25 -4.3)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "94391c4a-3457-4c79-98d2-da877b545f65")
-		)
-		(fp_line
-			(start -10.25 11.9)
-			(end -10.25 -4.3)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "19333dfd-2f31-4010-8af2-8270ca4d5ca3")
-		)
-		(fp_line
 			(start 10.25 -4.3)
 			(end 10.25 11.9)
 			(stroke
@@ -4378,6 +4358,16 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "bea73966-0d7d-486a-bbd2-a07617087ccb")
+		)
+		(fp_line
+			(start -10.25 -4.3)
+			(end 10.25 -4.3)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "94391c4a-3457-4c79-98d2-da877b545f65")
 		)
 		(fp_line
 			(start 10.25 11.9)
@@ -4389,8 +4379,18 @@
 			(layer "F.CrtYd")
 			(uuid "d756b1d8-0395-4f31-9c01-fc5eb4004ffb")
 		)
+		(fp_line
+			(start -10.25 11.9)
+			(end -10.25 -4.3)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "19333dfd-2f31-4010-8af2-8270ca4d5ca3")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "cadd7f1b-f4ab-4eed-b801-f525c5f9a3b9")
 			(effects
@@ -4401,7 +4401,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at -4.75 0)
+			(at -4.75 0 90)
 			(size 3.1 3.1)
 			(drill 2.100022)
 			(layers "*.Cu" "*.Mask")
@@ -4412,7 +4412,7 @@
 			(uuid "7ad85f71-8eb1-4003-ab75-6914a83fa317")
 		)
 		(pad "2" thru_hole circle
-			(at 4.75 0)
+			(at 4.75 0 90)
 			(size 3.1 3.1)
 			(drill 2.100022)
 			(layers "*.Cu" "*.Mask")
@@ -4438,7 +4438,7 @@
 	(footprint "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
 		(layer "F.Cu")
 		(uuid "696df5f2-cfbe-4dc3-bd15-a4833575a2b8")
-		(at 125.86 88.85)
+		(at 127.1925 91.803929)
 		(property "Reference" "F3"
 			(at 0 -4 0)
 			(layer "F.SilkS")
@@ -4755,7 +4755,7 @@
 	(footprint "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
 		(layer "F.Cu")
 		(uuid "6e1a4aaf-fd52-4eda-9042-4e2c75095f29")
-		(at 137.6175 68.210357 -90)
+		(at 137.7 72.3 -90)
 		(property "Reference" "J3"
 			(at 0 -4 90)
 			(layer "F.SilkS")
@@ -5096,7 +5096,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "864cf647-c6c1-4985-a161-1aa1789b1671")
-		(at 83.25 108.3 90)
+		(at 83.95 107.4 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1"
@@ -5276,7 +5276,7 @@
 	(footprint "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
 		(layer "F.Cu")
 		(uuid "9d4f20ad-cca9-48cf-a9bf-6df541100c29")
-		(at 137.6175 80.603214 -90)
+		(at 137.7 84.108622 -90)
 		(property "Reference" "J4"
 			(at 0 -4 90)
 			(layer "F.SilkS")
@@ -5617,7 +5617,7 @@
 	(footprint "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
 		(layer "F.Cu")
 		(uuid "ad808b58-95da-4de7-8448-76ee90a895b5")
-		(at 125.86 101.7)
+		(at 127.1925 104.061072)
 		(property "Reference" "F4"
 			(at 0 -4 0)
 			(layer "F.SilkS")
@@ -5934,7 +5934,7 @@
 	(footprint "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
 		(layer "F.Cu")
 		(uuid "b07cb402-0b16-4747-ab6f-fab8dfa0ab13")
-		(at 137.6175 142.5675 -90)
+		(at 137.7 143.151735 -90)
 		(property "Reference" "J9"
 			(at 0 -4 90)
 			(layer "F.SilkS")
@@ -6275,7 +6275,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "b10f94a9-e087-46f6-9647-0b9b4272ceea")
-		(at 102.83 155.05)
+		(at 98.41 130.2)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=2.54mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Vertical pin pitch 2.54mm 0.167W length 3.6mm diameter 1.6mm")
 		(property "Reference" "R8"
@@ -6667,7 +6667,7 @@
 	(footprint "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
 		(layer "F.Cu")
 		(uuid "b60af637-11c4-46a4-8927-c409d361d743")
-		(at 125.86 126.35)
+		(at 127.1425 127.575357)
 		(property "Reference" "F6"
 			(at 0 -4 0)
 			(layer "F.SilkS")
@@ -6984,7 +6984,7 @@
 	(footprint "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
 		(layer "F.Cu")
 		(uuid "c4931219-d5f3-4765-a5f4-d89d857e0dbc")
-		(at 137.6175 130.174643 -90)
+		(at 137.7 131.343112 -90)
 		(property "Reference" "J8"
 			(at 0 -4 90)
 			(layer "F.SilkS")
@@ -7325,7 +7325,7 @@
 	(footprint "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
 		(layer "F.Cu")
 		(uuid "cc782df6-14a1-466d-abe8-2a5ec674a63d")
-		(at 137.6175 105.388928 -90)
+		(at 137.7 107.725867 -90)
 		(property "Reference" "J6"
 			(at 0 -4 90)
 			(layer "F.SilkS")
@@ -7666,7 +7666,7 @@
 	(footprint "easyeda2kicad:TSSOP-24_L7.8-W4.4-P0.65-LS6.4-BL"
 		(layer "F.Cu")
 		(uuid "d2e46b12-0f6a-4fca-991a-37b05bdc139d")
-		(at 86.18 114.12 -90)
+		(at 86.88 113.22 -90)
 		(property "Reference" "U1"
 			(at 0 -7.023 90)
 			(layer "F.SilkS")
@@ -8133,7 +8133,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "dba4b880-8a2d-462f-a67a-ce0454790034")
-		(at 89.2 108.35 90)
+		(at 89.9 107.45 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C2"
@@ -8313,7 +8313,7 @@
 	(footprint "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
 		(layer "F.Cu")
 		(uuid "df3a6abd-a842-4b94-97ca-c5e1ae63982e")
-		(at 137.6175 154.960357 -90)
+		(at 137.7 154.960357 -90)
 		(property "Reference" "J10"
 			(at 0 -4 90)
 			(layer "F.SilkS")
@@ -8654,7 +8654,7 @@
 	(footprint "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
 		(layer "F.Cu")
 		(uuid "e142b278-b6d8-4767-ba46-76c2dd86b51d")
-		(at 125.86 114)
+		(at 127.1425 115.818214)
 		(property "Reference" "F5"
 			(at 0 -4 0)
 			(layer "F.SilkS")
@@ -8971,7 +8971,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "ec56c1b0-bb2d-4ab3-b321-31f6a9b24b3b")
-		(at 102.83 117.6)
+		(at 98.41 115.3)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=2.54mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Vertical pin pitch 2.54mm 0.167W length 3.6mm diameter 1.6mm")
 		(property "Reference" "R5"
@@ -9363,7 +9363,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "f62df1e3-0522-4d8d-9fbf-085eedf26f9f")
-		(at 102.83 80.45)
+		(at 98.41 98.16)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=2.54mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Vertical pin pitch 2.54mm 0.167W length 3.6mm diameter 1.6mm")
 		(property "Reference" "R2"
@@ -9755,7 +9755,7 @@
 	(footprint "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
 		(layer "F.Cu")
 		(uuid "fc83a0f7-6815-40b1-8c4b-1417888ffeb0")
-		(at 125.86 138.35)
+		(at 127.1425 138.9825)
 		(property "Reference" "F7"
 			(at 0 -4 0)
 			(layer "F.SilkS")
