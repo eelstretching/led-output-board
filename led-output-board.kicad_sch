@@ -6,6 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "LED Output Board")
+		(rev "1.0")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x08_Odd_Even"
@@ -572,34 +573,42 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EasyEDA:1812L400_16GR"
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 5.08 0)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "1812L400/16GR"
-				(at 0 -5.08 0)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" "EasyEDA:F1812"
-				(at 0 -7.62 0)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -620,7 +629,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Unpolarized capacitor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -631,8 +640,8 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C22374900"
-				(at 0 -10.16 0)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -642,34 +651,48 @@
 					)
 				)
 			)
-			(symbol "1812L400_16GR_0_1"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
+			)
+			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.54 0) (xy 2.54 0)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
-						(width 0)
+						(width 0.508)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(pin unspecified line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -684,10 +707,10 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -966,304 +989,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "PixelBlit:0402,100nF"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 2.032 1.668 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "100nF"
-				(at 2.032 -0.3782 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 0.8 0.8)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "PixelBlit:C_0402"
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "16V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC" "C1525"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Stock" "16712941"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Price" "0.004USD"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Process" "SMT"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Minimum Qty" "20"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Attrition Qty" "10"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Class" "Basic Component"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "Samsung Electro-Mechanics"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Part" "CL05B104KO5NNNC"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Voltage Rated" "16V"
-				(at 2.032 -2.0462 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 0.8 0.8)
-					)
-					(justify left)
-				)
-			)
-			(property "Tolerance" "±10%"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Capacitance" "100nF"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Temperature Coefficient" "X7R"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0402,100nF_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0.635) (xy 1.27 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -0.635) (xy 1.27 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "0402,100nF_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 3.175)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 3.175)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2395,6 +2120,172 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "easyeda2kicad:RUEF400"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "RUEF400"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C2760163.pdf"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Littelfuse(美国力特)"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "RUEF400"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C2760163"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Resettable Fuses"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RUEF400_0_1"
+				(polyline
+					(pts
+						(xy -2.54 1.78) (xy -1.27 1.78) (xy 1.27 -1.78) (xy 2.54 -1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 1.02)
+					(end 2.54 -1.02)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -2788,193 +2679,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GNDPWR"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "GNDPWR"
-				(at 0 -3.302 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global ground"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GNDPWR_0_1"
-				(polyline
-					(pts
-						(xy -1.016 -1.27) (xy -1.27 -2.032) (xy -1.27 -2.032)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.508 -1.27) (xy -0.762 -2.032) (xy -0.762 -2.032)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy -0.254 -2.032) (xy -0.254 -2.032)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 -1.27) (xy 0.254 -2.032) (xy 0.254 -2.032)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -1.27) (xy -1.016 -1.27) (xy -1.016 -1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -1.27) (xy 0.762 -2.032) (xy 0.762 -2.032) (xy 0.762 -2.032)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GNDPWR_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:PWR_FLAG"
 			(power global)
 			(pin_numbers
@@ -3091,6 +2795,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
+		(exclude_from_sim no)
+		(at 201.93 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4608d3c0-bd88-40f8-8719-0a8a4a1e3816")
+	)
 	(junction
 		(at 34.29 96.52)
 		(diameter 0)
@@ -3102,6 +2816,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3249daf6-bc83-4a28-8714-8751d014ee42")
+	)
+	(junction
+		(at 121.92 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37ef4eae-b413-495f-b1ee-8de748c9f4e1")
 	)
 	(junction
 		(at 53.34 91.44)
@@ -3116,22 +2836,10 @@
 		(uuid "79b0ba29-8464-42ef-9ff8-36aa7e2e1d59")
 	)
 	(junction
-		(at 148.59 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7b4c70b2-a0d1-4336-8a8a-8bebe50806e2")
-	)
-	(junction
 		(at 48.26 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7e4fd5e5-8df1-4eb3-b716-fa745e7e04b1")
-	)
-	(junction
-		(at 121.92 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "94657938-69de-4cf4-967e-ba15694b0d8a")
 	)
 	(junction
 		(at 138.43 58.42)
@@ -3164,10 +2872,10 @@
 		(uuid "b469b0b1-9af9-4053-b2d6-44dbe55e1d57")
 	)
 	(junction
-		(at 44.45 43.18)
+		(at 148.59 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c44c3fbf-fc6e-48b7-93a0-efed9aae3fdb")
+		(uuid "b91a6676-bb23-403a-a35e-16203e0f645f")
 	)
 	(junction
 		(at 128.27 58.42)
@@ -3187,6 +2895,12 @@
 		(color 0 0 0 0)
 		(uuid "f6bc1db5-1591-426b-9f57-60551c597044")
 	)
+	(junction
+		(at 44.45 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb4ad757-d8b6-4895-a45e-1d8a168a8ce6")
+	)
 	(wire
 		(pts
 			(xy 62.23 78.74) (xy 53.34 78.74)
@@ -3196,6 +2910,16 @@
 			(type default)
 		)
 		(uuid "003abad9-828d-4326-bee4-212c335dbdc1")
+	)
+	(wire
+		(pts
+			(xy 246.38 148.59) (xy 241.3 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07b094b1-f4cb-4df2-8c38-1b1a2c1195d8")
 	)
 	(wire
 		(pts
@@ -3229,6 +2953,26 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 109.22) (xy 224.79 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "128fe13a-a5f6-45f4-83d3-f412dbc63af3")
+	)
+	(wire
+		(pts
+			(xy 246.38 76.2) (xy 241.3 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12d35816-7bf3-4237-8261-5747b3da69ee")
+	)
+	(wire
+		(pts
 			(xy 74.93 96.52) (xy 123.19 96.52)
 		)
 		(stroke
@@ -3249,16 +2993,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 43.18) (xy 44.45 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "181412f0-03b0-4a99-b6b5-9c4ad5d947a5")
-	)
-	(wire
-		(pts
 			(xy 62.23 88.9) (xy 53.34 88.9)
 		)
 		(stroke
@@ -3276,6 +3010,16 @@
 			(type default)
 		)
 		(uuid "20100e58-2e83-4156-9167-b5e1a1c2fbd2")
+	)
+	(wire
+		(pts
+			(xy 231.14 76.2) (xy 224.79 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "215629e6-06c1-4b35-a060-e9c5c648fe1b")
 	)
 	(wire
 		(pts
@@ -3329,7 +3073,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 96.52) (xy 234.95 96.52)
+			(xy 232.41 96.52) (xy 246.38 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3339,7 +3083,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 58.42) (xy 128.27 58.42)
+			(xy 116.84 58.42) (xy 121.92 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3356,6 +3100,16 @@
 			(type default)
 		)
 		(uuid "395bdba7-b7f0-4b80-9da6-c38a644922e9")
+	)
+	(wire
+		(pts
+			(xy 241.3 41.91) (xy 246.38 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b8b32eb-37a1-4e0c-9f12-abd3295b26ce")
 	)
 	(wire
 		(pts
@@ -3379,7 +3133,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 78.74) (xy 234.95 78.74)
+			(xy 223.52 78.74) (xy 246.38 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3399,6 +3153,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 59.69) (xy 241.3 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ff5088e-39d6-41ce-8f88-8d55ca178ffd")
+	)
+	(wire
+		(pts
 			(xy 53.34 91.44) (xy 62.23 91.44)
 		)
 		(stroke
@@ -3409,13 +3173,33 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 24.13) (xy 234.95 24.13)
+			(xy 231.14 128.27) (xy 224.79 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54d92511-f5b9-4d24-bee8-6684dace0061")
+	)
+	(wire
+		(pts
+			(xy 223.52 24.13) (xy 246.38 24.13)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "55358179-39ab-4eed-9dec-1f79cb4bd6ca")
+	)
+	(wire
+		(pts
+			(xy 246.38 128.27) (xy 241.3 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55ca75f8-2906-4a0c-8413-eb0199dfc5c1")
 	)
 	(wire
 		(pts
@@ -3459,7 +3243,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 43.18) (xy 40.64 43.18)
+			(xy 40.64 43.18) (xy 44.45 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3479,7 +3263,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 26.67) (xy 234.95 26.67)
+			(xy 232.41 26.67) (xy 246.38 26.67)
 		)
 		(stroke
 			(width 0)
@@ -3489,13 +3273,23 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 46.99) (xy 234.95 46.99)
+			(xy 232.41 46.99) (xy 246.38 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "686404fe-86a4-4641-99ea-94f11f9465ed")
+	)
+	(wire
+		(pts
+			(xy 121.92 58.42) (xy 128.27 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68c91bef-b4e0-4247-b403-716151f0c37a")
 	)
 	(wire
 		(pts
@@ -3516,6 +3310,26 @@
 			(type default)
 		)
 		(uuid "6e6fd631-a779-4268-84c6-8939e462a669")
+	)
+	(wire
+		(pts
+			(xy 231.14 41.91) (xy 224.79 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75b35658-8a87-4130-be57-45813aec7ec9")
+	)
+	(wire
+		(pts
+			(xy 231.14 91.44) (xy 224.79 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79111675-c4dd-4983-95c4-d8ab99f5f578")
 	)
 	(wire
 		(pts
@@ -3559,6 +3373,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 109.22) (xy 241.3 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a12ab7-a394-46ae-abd2-e1a88a38f107")
+	)
+	(wire
+		(pts
 			(xy 191.77 78.74) (xy 215.9 78.74)
 		)
 		(stroke
@@ -3589,6 +3413,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 43.18) (xy 52.07 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "939c6e1e-3845-46d0-80ae-c54e8f44d624")
+	)
+	(wire
+		(pts
 			(xy 130.81 58.42) (xy 128.27 58.42)
 		)
 		(stroke
@@ -3599,13 +3433,23 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 44.45) (xy 234.95 44.45)
+			(xy 223.52 44.45) (xy 246.38 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "971758ca-5194-468f-b3f6-6e904cc5c309")
+	)
+	(wire
+		(pts
+			(xy 231.14 21.59) (xy 224.79 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "971cda7b-f413-4ed6-b218-dfb476144295")
 	)
 	(wire
 		(pts
@@ -3619,13 +3463,23 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 93.98) (xy 234.95 93.98)
+			(xy 223.52 93.98) (xy 246.38 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9bc8147c-d677-4253-8f84-f433f4ac23f6")
+	)
+	(wire
+		(pts
+			(xy 231.14 59.69) (xy 224.79 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c733a15-98d2-4ef1-8d15-d9ee42a2923e")
 	)
 	(wire
 		(pts
@@ -3656,6 +3510,16 @@
 			(type default)
 		)
 		(uuid "a0fb6a63-bc8d-4886-90ed-fbd3c0b05a69")
+	)
+	(wire
+		(pts
+			(xy 148.59 58.42) (xy 153.67 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3dfc4e6-4076-47df-9de5-84008246a537")
 	)
 	(wire
 		(pts
@@ -3699,6 +3563,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 91.44) (xy 241.3 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a78be05c-835c-44ed-9aef-782321e76969")
+	)
+	(wire
+		(pts
 			(xy 143.51 86.36) (xy 191.77 86.36)
 		)
 		(stroke
@@ -3729,7 +3603,17 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 153.67) (xy 234.95 153.67)
+			(xy 246.38 21.59) (xy 241.3 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8ea831d-090a-4ff1-9c37-68f5b0482c3e")
+	)
+	(wire
+		(pts
+			(xy 232.41 153.67) (xy 246.38 153.67)
 		)
 		(stroke
 			(width 0)
@@ -3829,7 +3713,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 111.76) (xy 234.95 111.76)
+			(xy 223.52 111.76) (xy 246.38 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3859,7 +3743,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 114.3) (xy 234.95 114.3)
+			(xy 232.41 114.3) (xy 246.38 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3879,7 +3763,17 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 130.81) (xy 234.95 130.81)
+			(xy 231.14 148.59) (xy 224.79 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed363687-33d6-49b5-8141-087eaf058d19")
+	)
+	(wire
+		(pts
+			(xy 223.52 130.81) (xy 246.38 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3899,7 +3793,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 62.23) (xy 234.95 62.23)
+			(xy 223.52 62.23) (xy 246.38 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3909,7 +3803,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 151.13) (xy 234.95 151.13)
+			(xy 223.52 151.13) (xy 246.38 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3919,7 +3813,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 133.35) (xy 234.95 133.35)
+			(xy 232.41 133.35) (xy 246.38 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3929,7 +3823,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 64.77) (xy 234.95 64.77)
+			(xy 232.41 64.77) (xy 246.38 64.77)
 		)
 		(stroke
 			(width 0)
@@ -3949,7 +3843,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 58.42) (xy 153.67 58.42)
+			(xy 138.43 58.42) (xy 148.59 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3989,104 +3883,13 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 81.28) (xy 234.95 81.28)
+			(xy 232.41 81.28) (xy 246.38 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ff9e4c7e-5004-43fd-8e81-79f16e61c8a7")
-	)
-	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
-		(at 229.87 109.22 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00d2d2a0-ff32-40a3-ac06-c6e5b2aa7559")
-		(property "Reference" "F6"
-			(at 230.886 106.934 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1812L400/16GR"
-			(at 229.87 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:F1812"
-			(at 229.87 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.87 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 229.87 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C22374900"
-			(at 229.87 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d19709c8-bfaa-49e9-89e3-bdee90306757")
-		)
-		(pin "2"
-			(uuid "d3829cff-5010-4cd4-85b0-42a538dd0065")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "F6")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -4100,7 +3903,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "093b8c38-bfc5-4556-887d-8e7269aaaa21")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG04"
 			(at 48.26 92.075 0)
 			(hide yes)
 			(show_name no)
@@ -4160,7 +3963,273 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#FLG02")
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PixelBlit:0402,47Ω")
+		(at 219.71 151.13 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0baf8555-f492-4901-9ba2-1700b61d5259")
+		(property "Reference" "R8"
+			(at 219.71 147.32 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47Ω"
+			(at 219.71 151.13 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+			(at 219.71 152.908 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" ""
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "12"
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0402WGF470JTCE"
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "47Ω"
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±200ppm/°C"
+			(at 219.71 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b496bb57-8fe3-41da-b8b4-304b9324722e")
+		)
+		(pin "1"
+			(uuid "5b9fe091-4c77-41c7-abbb-b8d4e3d9580b")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -4177,7 +4246,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "13956a53-6df7-4396-a545-d3085af7bafb")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR011"
 			(at 224.79 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -4238,7 +4307,370 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR06")
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PixelBlit:DB301V-3.5-3P-GN")
+		(at 251.46 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15b67fb6-11e4-4c44-8afc-cda56f459700")
+		(property "Reference" "J9"
+			(at 255.27 130.8099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DB301V-3.5-3P-GN"
+			(at 255.27 132.0799 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
+			(at 251.46 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_DIBO-DB301V-3-5-3P-GN_C695630.html"
+			(at 251.46 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 251.46 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C695630"
+			(at 251.46 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "df42d6f8-8fe1-4c4d-a521-43088f935c0e")
+		)
+		(pin "3"
+			(uuid "8ae1068a-e742-4499-b86c-0d0ada4ca766")
+		)
+		(pin "1"
+			(uuid "0370af5e-cdf5-4398-a841-729425dc98b6")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PixelBlit:0402,47Ω")
+		(at 219.71 111.76 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "18f966a4-16de-4409-a899-16d9c2546a78")
+		(property "Reference" "R6"
+			(at 219.71 107.95 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47Ω"
+			(at 219.71 111.76 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+			(at 219.71 113.538 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" ""
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "12"
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0402WGF470JTCE"
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "47Ω"
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±200ppm/°C"
+			(at 219.71 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "bf326f1f-2246-4333-bd73-b8fb88665c63")
+		)
+		(pin "1"
+			(uuid "337df526-78b0-4ab8-8585-8b47b49d6a0e")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -4257,7 +4689,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d45cb82-e446-493b-b2a4-9bbf0ff6e5b0")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG02"
 			(at 44.45 38.735 0)
 			(hide yes)
 			(show_name no)
@@ -4317,7 +4749,104 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#FLG01")
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PixelBlit:DB301V-3.5-3P-GN")
+		(at 251.46 151.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21a55c7f-da3a-4793-b0a3-6afca6e3b41a")
+		(property "Reference" "J10"
+			(at 255.27 151.1299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DB301V-3.5-3P-GN"
+			(at 255.27 152.3999 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
+			(at 251.46 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_DIBO-DB301V-3-5-3P-GN_C695630.html"
+			(at 251.46 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 251.46 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C695630"
+			(at 251.46 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ff009557-39c1-4641-a4c3-3f010d4133c3")
+		)
+		(pin "3"
+			(uuid "44613feb-2b39-49d8-bbc3-1bf9df2761a7")
+		)
+		(pin "1"
+			(uuid "ea3846de-2b5d-4965-adc4-d309b013106d")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -4335,7 +4864,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24b08590-b7c6-4cb2-9658-dde744132bd5")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR026"
 			(at 232.41 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -4396,195 +4925,7 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PixelBlit:DB301V-3.5-3P-GN")
-		(at 240.03 24.13 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "24c26b45-5a1a-4a52-8516-fa2eb4b6c528")
-		(property "Reference" "J1"
-			(at 243.84 24.1299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DB301V-3.5-3P-GN"
-			(at 243.84 25.3999 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PixelBlit:CONN-TH_DB301V-3.5-3P-GN"
-			(at 240.03 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_DIBO-DB301V-3-5-3P-GN_C695630.html"
-			(at 240.03 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 240.03 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C695630"
-			(at 240.03 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "99ee4038-dd5a-4d86-88ae-c79ed87f0642")
-		)
-		(pin "3"
-			(uuid "d42531fa-aeae-49c7-b3ce-50bf2513aa3a")
-		)
-		(pin "1"
-			(uuid "9cdcdcf3-3ee7-46f9-b638-ba63ef50537a")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
-		(at 229.87 148.59 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "26351c96-1b6a-4b65-9046-49882645e5a1")
-		(property "Reference" "F8"
-			(at 230.124 145.288 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1812L400/16GR"
-			(at 229.87 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:F1812"
-			(at 229.87 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.87 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 229.87 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C22374900"
-			(at 229.87 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f00d4354-b7ba-412b-adc5-00e8fdedc75b")
-		)
-		(pin "2"
-			(uuid "50224a68-854c-4074-9426-419be1144b3d")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "F8")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -4602,7 +4943,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26cd6097-369c-4c2f-9b70-9e46c7d5ce74")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR09"
 			(at 148.59 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -4662,15 +5003,15 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR05")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PixelBlit:0402,47Ω")
-		(at 219.71 62.23 90)
+		(lib_id "PixelBlit:DB301V-3.5-3P-GN")
+		(at 251.46 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4679,29 +5020,32 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2843a67e-770c-4a5b-9115-c950cc14179e")
-		(property "Reference" "R3"
-			(at 219.71 58.42 90)
+		(uuid "27a93f98-011f-46c0-a916-6d441ec90bb4")
+		(property "Reference" "J8"
+			(at 255.27 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "47Ω"
-			(at 219.71 62.23 90)
+		(property "Value" "DB301V-3.5-3P-GN"
+			(at 255.27 113.0299 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "PixelBlit:R_0402"
-			(at 219.71 64.008 90)
+		(property "Footprint" "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
+			(at 251.46 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4711,8 +5055,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF470JTCE_C25118.pdf"
-			(at 219.71 62.23 0)
+		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_DIBO-DB301V-3-5-3P-GN_C695630.html"
+			(at 251.46 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4722,8 +5066,8 @@
 				)
 			)
 		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±1% ±200ppm/°C 47Ω 0402 Chip Resistor - Surface Mount ROHS"
-			(at 219.71 62.23 0)
+		(property "Description" ""
+			(at 251.46 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4733,184 +5077,8 @@
 				)
 			)
 		)
-		(property "LCSC" "C25118"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Stock" "468126"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" "0.004USD"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Process" "SMT"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" "12"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" "Preferred Component"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "0402WGF470JTCE"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Resistance" "47Ω"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power(Watts)" "62.5mW"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Type" "Thick Film Resistors"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Overload Voltage (Max)" "50V"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "±1%"
-			(at 219.71 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Temperature Coefficient" "±200ppm/°C"
-			(at 219.71 62.23 0)
+		(property "LCSC Part" "C695630"
+			(at 251.46 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4921,15 +5089,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "2970cab0-7685-44fc-a471-524064227461")
+			(uuid "352f5c8f-67c9-41ce-b8aa-2f8106789c61")
+		)
+		(pin "3"
+			(uuid "6797b487-f3cd-4c53-8baf-13ba8ddadd1e")
 		)
 		(pin "1"
-			(uuid "86c3d923-fc9b-4b8e-8cc6-7ef11a433167")
+			(uuid "b8b09a28-4a78-4ec6-9514-ae7b22173f0e")
 		)
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "R3")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -4947,7 +5118,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d4561b1-cf36-48f6-a781-f6202add6fb5")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR025"
 			(at 232.41 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -5008,189 +5179,7 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
-		(at 229.87 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2ec78dff-8f63-4e8f-9559-ddbc1aa874dd")
-		(property "Reference" "F2"
-			(at 230.886 39.624 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1812L400/16GR"
-			(at 229.87 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:F1812"
-			(at 229.87 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.87 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 229.87 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C22374900"
-			(at 229.87 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "644fd61b-96da-4a85-b0b9-cd2dbeeb5650")
-		)
-		(pin "2"
-			(uuid "79a9f7ea-13b9-4a46-9194-11e5981450df")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "F2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
-		(at 229.87 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "300c47ff-d460-4404-a807-68cb6ca33584")
-		(property "Reference" "F5"
-			(at 230.886 89.154 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1812L400/16GR"
-			(at 229.87 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:F1812"
-			(at 229.87 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.87 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 229.87 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C22374900"
-			(at 229.87 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ca18415a-53be-4ec5-968e-b8041d9db046")
-		)
-		(pin "2"
-			(uuid "bcd987ae-e122-4045-92ce-5429ed44587f")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "F5")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -5227,7 +5216,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PixelBlit:TSSOP-24_L7.8-W4.4-P0.65-LS6.4-BL"
+		(property "Footprint" "easyeda2kicad:TSSOP-24_L7.8-W4.4-P0.65-LS6.4-BL"
 			(at 135.89 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -5363,7 +5352,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3a30167b-a0f2-47b9-8a75-9a540f32fcb5")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR013"
 			(at 224.79 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5423,98 +5412,7 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
-		(at 229.87 128.27 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3b0e5ddb-e6d8-4ddb-8d45-fbd7372c5d53")
-		(property "Reference" "F7"
-			(at 230.124 124.968 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1812L400/16GR"
-			(at 229.87 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:F1812"
-			(at 229.87 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.87 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 229.87 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C22374900"
-			(at 229.87 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4a5bbfa9-933c-4c34-aaf9-781026aaccd1")
-		)
-		(pin "2"
-			(uuid "27c80534-2e8e-404b-830e-95294d61993e")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "F7")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5532,7 +5430,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3c3d0259-9bed-4f32-ad6b-0f7ad4e9a8af")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR05"
 			(at 53.34 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -5593,85 +5491,7 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDPWR")
-		(at 44.45 43.18 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3e26c405-485b-44f4-a911-8d18e781ae00")
-		(property "Reference" "#PWR027"
-			(at 44.45 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDPWR"
-			(at 44.323 46.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 44.45 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "88c9e180-efb0-4afc-8265-5daaa3d10b43")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR027")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -5688,7 +5508,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4070a4b5-1be2-4e35-9bdd-3c2a521afc62")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR014"
 			(at 224.79 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -5748,7 +5568,7 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR09")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -5756,7 +5576,7 @@
 	)
 	(symbol
 		(lib_id "PixelBlit:DB301V-3.5-3P-GN")
-		(at 240.03 130.81 0)
+		(at 251.46 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5765,9 +5585,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "42ff562a-eb61-4806-b83c-337d9aef2e98")
+		(uuid "42b972f0-08f4-41bc-8292-fb3e2c47b9f1")
 		(property "Reference" "J7"
-			(at 243.84 130.8099 0)
+			(at 255.27 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5778,7 +5598,7 @@
 			)
 		)
 		(property "Value" "DB301V-3.5-3P-GN"
-			(at 243.84 132.0799 0)
+			(at 255.27 95.2499 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5789,8 +5609,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PixelBlit:CONN-TH_DB301V-3.5-3P-GN"
-			(at 240.03 140.97 0)
+		(property "Footprint" "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
+			(at 251.46 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5801,7 +5621,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_DIBO-DB301V-3-5-3P-GN_C695630.html"
-			(at 240.03 143.51 0)
+			(at 251.46 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5812,7 +5632,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 240.03 130.81 0)
+			(at 251.46 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5823,7 +5643,7 @@
 			)
 		)
 		(property "LCSC Part" "C695630"
-			(at 240.03 146.05 0)
+			(at 251.46 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5834,13 +5654,13 @@
 			)
 		)
 		(pin "2"
-			(uuid "98c200eb-09f5-4591-998e-2b77d9ad0140")
+			(uuid "eb003b3c-750c-4320-bd18-68bd9598d1f0")
 		)
 		(pin "3"
-			(uuid "741dcf86-c8b7-4abc-ba99-5a85797b3aa3")
+			(uuid "47cae07a-19bd-4cac-a10c-d0a7ecc0df28")
 		)
 		(pin "1"
-			(uuid "9e89db71-b289-4560-b2ab-b5bf62cf4941")
+			(uuid "956505af-431e-4525-943b-c4ac25bcc561")
 		)
 		(instances
 			(project "led-output-board"
@@ -5863,7 +5683,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4654a8b6-d25e-4a19-907d-4f1699fb14fd")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR07"
 			(at 121.92 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -5923,15 +5743,15 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR02")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PixelBlit:0402,47Ω")
-		(at 219.71 78.74 90)
+		(lib_id "easyeda2kicad:RUEF400")
+		(at 236.22 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5940,9 +5760,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4eb4a76a-dbba-41f8-81c6-f65fe3d21a8d")
-		(property "Reference" "R4"
-			(at 219.71 74.93 90)
+		(uuid "4e505aa8-5110-46fc-ba31-7b6a1ff79187")
+		(property "Reference" "F6"
+			(at 236.22 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5951,18 +5771,18 @@
 				)
 			)
 		)
-		(property "Value" "47Ω"
-			(at 219.71 78.74 90)
+		(property "Value" "RUEF400"
+			(at 236.22 105.41 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PixelBlit:R_0402"
-			(at 219.71 80.518 90)
+		(property "Footprint" "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
+			(at 236.22 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5972,8 +5792,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF470JTCE_C25118.pdf"
-			(at 219.71 78.74 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2760163.pdf"
+			(at 236.22 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5983,8 +5803,8 @@
 				)
 			)
 		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±1% ±200ppm/°C 47Ω 0402 Chip Resistor - Surface Mount ROHS"
-			(at 219.71 78.74 0)
+		(property "Description" ""
+			(at 236.22 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5994,8 +5814,8 @@
 				)
 			)
 		)
-		(property "LCSC" "C25118"
-			(at 219.71 78.74 0)
+		(property "Manufacturer" "Littelfuse(美国力特)"
+			(at 236.22 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6005,8 +5825,8 @@
 				)
 			)
 		)
-		(property "Stock" "468126"
-			(at 219.71 78.74 0)
+		(property "MPN" "RUEF400"
+			(at 236.22 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6016,162 +5836,8 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
-			(at 219.71 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Process" "SMT"
-			(at 219.71 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 219.71 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" "12"
-			(at 219.71 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" "Preferred Component"
-			(at 219.71 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 219.71 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 219.71 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "0402WGF470JTCE"
-			(at 219.71 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Resistance" "47Ω"
-			(at 219.71 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power(Watts)" "62.5mW"
-			(at 219.71 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Type" "Thick Film Resistors"
-			(at 219.71 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Overload Voltage (Max)" "50V"
-			(at 219.71 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 219.71 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "±1%"
-			(at 219.71 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Temperature Coefficient" "±200ppm/°C"
-			(at 219.71 78.74 0)
+		(property "LCSC Part" "C2760163"
+			(at 236.22 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6182,23 +5848,23 @@
 			)
 		)
 		(pin "2"
-			(uuid "3d80c5ae-433f-41ab-9841-15277d921644")
+			(uuid "16aad0b5-1163-4043-8155-f0e723805da8")
 		)
 		(pin "1"
-			(uuid "64510759-1cfd-4ede-a4c0-43a40d0def8d")
+			(uuid "2b1570dc-c622-41e9-9ac5-95ad87821af2")
 		)
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "R4")
+					(reference "F6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PixelBlit:0402,47Ω")
-		(at 219.71 44.45 90)
+		(lib_id "easyeda2kicad:RUEF400")
+		(at 236.22 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6206,9 +5872,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "4f4937bf-410e-44c2-a15a-47199d22eb8a")
-		(property "Reference" "R2"
-			(at 219.71 40.64 90)
+		(fields_autoplaced yes)
+		(uuid "4e5cc67c-31ee-4167-9199-8df882d1b3df")
+		(property "Reference" "F3"
+			(at 236.22 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6217,18 +5884,18 @@
 				)
 			)
 		)
-		(property "Value" "47Ω"
-			(at 219.71 44.45 90)
+		(property "Value" "RUEF400"
+			(at 236.22 55.88 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PixelBlit:R_0402"
-			(at 219.71 46.228 90)
+		(property "Footprint" "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
+			(at 236.22 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6238,8 +5905,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF470JTCE_C25118.pdf"
-			(at 219.71 44.45 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2760163.pdf"
+			(at 236.22 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6249,8 +5916,8 @@
 				)
 			)
 		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±1% ±200ppm/°C 47Ω 0402 Chip Resistor - Surface Mount ROHS"
-			(at 219.71 44.45 0)
+		(property "Description" ""
+			(at 236.22 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6260,8 +5927,8 @@
 				)
 			)
 		)
-		(property "LCSC" "C25118"
-			(at 219.71 44.45 0)
+		(property "Manufacturer" "Littelfuse(美国力特)"
+			(at 236.22 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6271,8 +5938,8 @@
 				)
 			)
 		)
-		(property "Stock" "468126"
-			(at 219.71 44.45 0)
+		(property "MPN" "RUEF400"
+			(at 236.22 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6282,162 +5949,8 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
-			(at 219.71 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Process" "SMT"
-			(at 219.71 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 219.71 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" "12"
-			(at 219.71 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" "Preferred Component"
-			(at 219.71 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 219.71 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 219.71 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "0402WGF470JTCE"
-			(at 219.71 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Resistance" "47Ω"
-			(at 219.71 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power(Watts)" "62.5mW"
-			(at 219.71 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Type" "Thick Film Resistors"
-			(at 219.71 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Overload Voltage (Max)" "50V"
-			(at 219.71 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 219.71 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "±1%"
-			(at 219.71 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Temperature Coefficient" "±200ppm/°C"
-			(at 219.71 44.45 0)
+		(property "LCSC Part" "C2760163"
+			(at 236.22 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6448,15 +5961,354 @@
 			)
 		)
 		(pin "2"
-			(uuid "0c5b1ff1-36c4-47bf-9128-0f9136b59ebd")
+			(uuid "5319168d-f4e0-4553-8a8e-798c8c945412")
 		)
 		(pin "1"
-			(uuid "94ac2708-ab94-44d7-a8e3-aa968b016519")
+			(uuid "df7b1753-5d37-42d7-baf9-09a163f7c605")
 		)
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "R2")
+					(reference "F3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:RUEF400")
+		(at 236.22 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4fc176f5-cf35-4e07-afca-a2d5257323eb")
+		(property "Reference" "F4"
+			(at 236.22 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RUEF400"
+			(at 236.22 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
+			(at 236.22 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2760163.pdf"
+			(at 236.22 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Littelfuse(美国力特)"
+			(at 236.22 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RUEF400"
+			(at 236.22 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2760163"
+			(at 236.22 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "bd3d7efe-9f20-4955-90b0-0bc92f2ca695")
+		)
+		(pin "1"
+			(uuid "cd055a62-2baa-462a-8373-b7431de1bcd9")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "F4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:RUEF400")
+		(at 236.22 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5126b3c9-452b-453d-a93d-8e814c2fba9a")
+		(property "Reference" "F8"
+			(at 236.22 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RUEF400"
+			(at 236.22 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
+			(at 236.22 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2760163.pdf"
+			(at 236.22 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Littelfuse(美国力特)"
+			(at 236.22 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RUEF400"
+			(at 236.22 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2760163"
+			(at 236.22 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "78bb5a85-f4a7-4203-b0b2-cadbb4461ede")
+		)
+		(pin "1"
+			(uuid "f24bd54e-1755-424b-8e9a-a2b08c6305a2")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "F8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:RUEF400")
+		(at 236.22 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "549aee71-b58c-4e99-90d9-59838b8b64e3")
+		(property "Reference" "F7"
+			(at 236.22 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RUEF400"
+			(at 236.22 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
+			(at 236.22 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2760163.pdf"
+			(at 236.22 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Littelfuse(美国力特)"
+			(at 236.22 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RUEF400"
+			(at 236.22 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2760163"
+			(at 236.22 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0b183526-8eb5-4d6f-8724-3f2cd43f4e62")
+		)
+		(pin "1"
+			(uuid "4879f653-cad8-40c1-9fcd-f5d3935faa9d")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "F7")
 					(unit 1)
 				)
 			)
@@ -6474,7 +6326,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54c5d1d9-7586-4535-9e83-6c31661a0c0a")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR020"
 			(at 232.41 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -6535,7 +6387,7 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR015")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -6554,7 +6406,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5679f152-3ad9-4578-b535-d619ffc52959")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR04"
 			(at 52.07 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -6615,7 +6467,7 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR025")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -6632,7 +6484,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5b3cdfcc-22d7-43eb-91c1-68fbb9779a5f")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR012"
 			(at 224.79 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -6692,7 +6544,7 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR07")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -6710,7 +6562,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e6d26a1-94cb-485b-999e-9e31d19020b7")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR023"
 			(at 232.41 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -6771,7 +6623,120 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR018")
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:RUEF400")
+		(at 236.22 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "604f9b13-8fd0-46b2-8adb-1b6bf6575410")
+		(property "Reference" "F2"
+			(at 236.22 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RUEF400"
+			(at 236.22 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
+			(at 236.22 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2760163.pdf"
+			(at 236.22 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Littelfuse(美国力特)"
+			(at 236.22 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RUEF400"
+			(at 236.22 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2760163"
+			(at 236.22 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3fe35be9-7e7b-48ee-a5dc-34cabaedd77c")
+		)
+		(pin "1"
+			(uuid "6de77de4-474c-4fda-996a-d4efe69d03cf")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "F2")
 					(unit 1)
 				)
 			)
@@ -6788,7 +6753,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "63cea6ae-1de6-4a57-9ff3-ad09c9c102ef")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR018"
 			(at 224.79 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -6848,7 +6813,7 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR013")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -6856,7 +6821,7 @@
 	)
 	(symbol
 		(lib_id "PixelBlit:DB301V-3.5-3P-GN")
-		(at 240.03 93.98 0)
+		(at 251.46 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6865,9 +6830,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "67bdb224-1f7d-40c1-a35a-0bf53d9de563")
-		(property "Reference" "J5"
-			(at 243.84 93.9799 0)
+		(uuid "6b2c87fc-c7c5-42e3-b79e-31446aacfa1f")
+		(property "Reference" "J6"
+			(at 255.27 78.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6878,7 +6843,7 @@
 			)
 		)
 		(property "Value" "DB301V-3.5-3P-GN"
-			(at 243.84 95.2499 0)
+			(at 255.27 80.0099 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6889,8 +6854,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PixelBlit:CONN-TH_DB301V-3.5-3P-GN"
-			(at 240.03 104.14 0)
+		(property "Footprint" "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
+			(at 251.46 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6901,7 +6866,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_DIBO-DB301V-3-5-3P-GN_C695630.html"
-			(at 240.03 106.68 0)
+			(at 251.46 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6912,7 +6877,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 240.03 93.98 0)
+			(at 251.46 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6923,7 +6888,7 @@
 			)
 		)
 		(property "LCSC Part" "C695630"
-			(at 240.03 109.22 0)
+			(at 251.46 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6934,255 +6899,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "5200f91b-c5c7-45f6-93b0-8c472f83b465")
+			(uuid "64c45856-863b-4f64-9e2b-0b866231dd5f")
 		)
 		(pin "3"
-			(uuid "2ca8b3a8-47cb-4c20-8c6c-2868ddff8d99")
+			(uuid "113412c4-c6e4-41a2-bc3f-dc344ab4c80a")
 		)
 		(pin "1"
-			(uuid "ac7df161-7bd7-40d7-93d3-74278aecff69")
+			(uuid "db70b0a9-f265-4d21-9b10-be4982735ce3")
 		)
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PixelBlit:0402,100nF")
-		(at 121.92 62.23 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6c9383dc-3b07-4c8e-962c-c24d88147871")
-		(property "Reference" "C1"
-			(at 119.38 59.6899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 119.38 62.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PixelBlit:C_0402"
-			(at 123.698 62.23 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
-			(at 121.92 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "16V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 121.92 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C1525"
-			(at 121.92 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Stock" "16712941"
-			(at 121.92 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" "0.004USD"
-			(at 121.92 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Process" "SMT"
-			(at 121.92 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 121.92 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" "10"
-			(at 121.92 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" "Basic Component"
-			(at 121.92 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 121.92 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 121.92 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "CL05B104KO5NNNC"
-			(at 121.92 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage Rated" "16V"
-			(at 119.38 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-				(justify left)
-			)
-		)
-		(property "Tolerance" "±10%"
-			(at 121.92 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "capacitance" "100nF"
-			(at 121.92 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Temperature Coefficient" "X7R"
-			(at 121.92 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cda26c41-c334-4264-96c3-6ef288b8994f")
-		)
-		(pin "2"
-			(uuid "aa8f9282-e5a5-4e31-a296-2e5481b56834")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "C1")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -7200,7 +6928,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "745ce314-2286-4d4c-8a8a-a706f04ab9a7")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR08"
 			(at 147.32 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -7260,7 +6988,185 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR03")
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 121.92 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "75e55294-9415-487e-a9c4-bd75761aa666")
+		(property "Reference" "C1"
+			(at 113.284 61.214 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 113.284 63.754 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
+			(at 122.8852 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 121.92 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "47742d36-c53a-4cb6-9460-1350e0700009")
+		)
+		(pin "1"
+			(uuid "e205778f-9171-4731-a50b-d6f8dfa50e9c")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PixelBlit:DB301V-3.5-3P-GN")
+		(at 251.46 24.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7960e7b8-f6e2-4789-8f8a-a7e3053c020b")
+		(property "Reference" "J3"
+			(at 255.27 24.1299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DB301V-3.5-3P-GN"
+			(at 255.27 25.3999 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
+			(at 251.46 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_DIBO-DB301V-3-5-3P-GN_C695630.html"
+			(at 251.46 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 251.46 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C695630"
+			(at 251.46 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "68c80257-3a23-405f-b4c6-035b96501512")
+		)
+		(pin "3"
+			(uuid "55ba491c-cc88-4598-add1-b7352cb8b5fc")
+		)
+		(pin "1"
+			(uuid "8f9910a2-3bb2-4ef9-8df1-4fbf0dc6ce6c")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -7278,7 +7184,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85a12092-4846-4a5a-a37c-c18d2516bab7")
-		(property "Reference" "J10"
+		(property "Reference" "J1"
 			(at 31.75 43.1801 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7300,7 +7206,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "EasyEDA:CONN-TH_2P-P9.50_DBT50G-9.5-2P"
+		(property "Footprint" "easyeda2kicad:CONN-TH_2P-P9.50_DBT50G-9.5-2P"
 			(at 35.56 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -7311,7 +7217,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Barrier-Terminal-Blocks_DIBO-DBT50G-9-5-2P_C395958.html"
+		(property "Datasheet" ""
 			(at 35.56 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -7333,7 +7239,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C395958"
+		(property "LCSC Part" ""
 			(at 35.56 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -7353,274 +7259,7 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "J10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PixelBlit:0402,47Ω")
-		(at 219.71 111.76 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "865fba8f-4b70-4fec-a447-52f4130fd52a")
-		(property "Reference" "R6"
-			(at 219.71 107.95 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47Ω"
-			(at 219.71 111.76 90)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-			)
-		)
-		(property "Footprint" "PixelBlit:R_0402"
-			(at 219.71 113.538 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF470JTCE_C25118.pdf"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±1% ±200ppm/°C 47Ω 0402 Chip Resistor - Surface Mount ROHS"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25118"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Stock" "468126"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" "0.004USD"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Process" "SMT"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" "12"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" "Preferred Component"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "0402WGF470JTCE"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Resistance" "47Ω"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power(Watts)" "62.5mW"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Type" "Thick Film Resistors"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Overload Voltage (Max)" "50V"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "±1%"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Temperature Coefficient" "±200ppm/°C"
-			(at 219.71 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6b319ed3-f2cb-460a-8223-8420a21f1441")
-		)
-		(pin "1"
-			(uuid "11d278ba-d57f-47ce-97ca-cf9c355458ac")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "R6")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -7639,7 +7278,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "879cc2d5-3236-4e09-b101-3d0db7c5c31e")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR02"
 			(at 41.91 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -7699,15 +7338,15 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR023")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PixelBlit:DB301V-3.5-3P-GN")
-		(at 240.03 44.45 0)
+		(lib_id "PixelBlit:0402,47Ω")
+		(at 219.71 62.23 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7715,34 +7354,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95935946-0d3e-4707-80e1-5056dd41f05e")
-		(property "Reference" "J2"
-			(at 243.84 44.4499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DB301V-3.5-3P-GN"
-			(at 243.84 45.7199 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PixelBlit:CONN-TH_DB301V-3.5-3P-GN"
-			(at 240.03 54.61 0)
-			(hide yes)
+		(uuid "880ad6bc-72d0-4109-acb9-1c2f3968bd6f")
+		(property "Reference" "R3"
+			(at 219.71 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7751,91 +7365,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_DIBO-DB301V-3-5-3P-GN_C695630.html"
-			(at 240.03 57.15 0)
-			(hide yes)
+		(property "Value" "47Ω"
+			(at 219.71 62.23 90)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
-		(property "Description" ""
-			(at 240.03 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C695630"
-			(at 240.03 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "9f92ec00-1c7a-4c45-965c-d0831c47212b")
-		)
-		(pin "3"
-			(uuid "76aa6560-c345-4cee-9717-bd5c410cc8c6")
-		)
-		(pin "1"
-			(uuid "670d1e6e-25fe-40db-bcfc-18484779f25b")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
-		(at 229.87 59.69 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9d3bf1cb-3292-4c78-b472-7a2cd7e5a2fb")
-		(property "Reference" "F3"
-			(at 230.632 57.404 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1812L400/16GR"
-			(at 229.87 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:F1812"
-			(at 229.87 67.31 0)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+			(at 219.71 64.008 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7846,7 +7387,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 59.69 0)
+			(at 219.71 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7857,7 +7398,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 229.87 59.69 0)
+			(at 219.71 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7867,8 +7408,8 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
-			(at 229.87 69.85 0)
+		(property "LCSC" ""
+			(at 219.71 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7878,16 +7419,192 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "6c15f40d-3014-41e5-b802-2fc7c880af68")
+		(property "Stock" ""
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "12"
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0402WGF470JTCE"
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "47Ω"
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±200ppm/°C"
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "2"
-			(uuid "757dffbd-a447-4a81-9e7f-71c1361f2203")
+			(uuid "15bf2597-8ccc-449c-807a-b6bd8961a948")
+		)
+		(pin "1"
+			(uuid "14ea073d-9a70-49b2-9d55-bfd264e6dc6f")
 		)
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "F3")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -7903,8 +7620,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a362745b-97eb-4a9a-a846-199186741006")
+		(uuid "8ec67845-227a-4266-9d29-e815bab8478d")
 		(property "Reference" "R5"
 			(at 219.71 90.17 90)
 			(show_name no)
@@ -7925,7 +7641,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PixelBlit:R_0402"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 219.71 95.758 90)
 			(hide yes)
 			(show_name no)
@@ -7936,7 +7652,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF470JTCE_C25118.pdf"
+		(property "Datasheet" ""
 			(at 219.71 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7947,7 +7663,7 @@
 				)
 			)
 		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±1% ±200ppm/°C 47Ω 0402 Chip Resistor - Surface Mount ROHS"
+		(property "Description" ""
 			(at 219.71 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7958,7 +7674,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25118"
+		(property "LCSC" ""
 			(at 219.71 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7969,7 +7685,7 @@
 				)
 			)
 		)
-		(property "Stock" "468126"
+		(property "Stock" ""
 			(at 219.71 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7980,7 +7696,7 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
+		(property "Price" ""
 			(at 219.71 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -8146,112 +7862,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "d5567a97-1b8e-42ae-9b48-de55befac0b0")
+			(uuid "75e1e70b-896e-4bfd-b1f5-0f5ef8bbd9bf")
 		)
 		(pin "1"
-			(uuid "2c2a7e22-9388-4e31-9d8e-86a6ce912b24")
+			(uuid "a7054316-3dd2-4b4d-84fe-f62d166c55ee")
 		)
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PixelBlit:DB301V-3.5-3P-GN")
-		(at 240.03 111.76 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a76640cc-f000-4109-91e6-8165867e8a76")
-		(property "Reference" "J6"
-			(at 243.84 111.7599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DB301V-3.5-3P-GN"
-			(at 243.84 113.0299 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PixelBlit:CONN-TH_DB301V-3.5-3P-GN"
-			(at 240.03 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_DIBO-DB301V-3-5-3P-GN_C695630.html"
-			(at 240.03 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 240.03 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C695630"
-			(at 240.03 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "9ba5dca0-9c6f-459f-b5ba-92c40e9acc7b")
-		)
-		(pin "3"
-			(uuid "3776c56f-78ad-47c1-8d2f-b018435ba537")
-		)
-		(pin "1"
-			(uuid "a1233c84-a8e6-4b01-8239-2ebcf1d63d88")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -8269,7 +7888,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9d43f8e-7aea-4b4b-9fb3-dd8ab48e944e")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR019"
 			(at 232.41 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -8330,7 +7949,273 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR014")
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PixelBlit:0402,47Ω")
+		(at 219.71 78.74 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "af343773-a45d-47ea-bae7-9ca621031518")
+		(property "Reference" "R4"
+			(at 219.71 74.93 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47Ω"
+			(at 219.71 78.74 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+			(at 219.71 80.518 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" ""
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "12"
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0402WGF470JTCE"
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "47Ω"
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±200ppm/°C"
+			(at 219.71 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "31e50a9b-00c9-4757-9fc8-95945ef6a667")
+		)
+		(pin "1"
+			(uuid "a9d9f045-c932-436b-bf23-f767942c8831")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -8348,7 +8233,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b048733e-87c6-4c1c-a378-7af2ac1e62a3")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR010"
 			(at 153.67 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -8408,7 +8293,273 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR04")
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PixelBlit:0402,47Ω")
+		(at 219.71 44.45 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b5e7ecb1-9c0d-45dd-8987-d6d1edda2903")
+		(property "Reference" "R2"
+			(at 219.71 40.64 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47Ω"
+			(at 219.71 44.45 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+			(at 219.71 46.228 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" ""
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "12"
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0402WGF470JTCE"
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "47Ω"
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±200ppm/°C"
+			(at 219.71 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "22162b8b-1550-4152-9485-5e833369c4e9")
+		)
+		(pin "1"
+			(uuid "bccab76d-b20b-4491-9298-b116167f548c")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -8426,7 +8577,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b9083d70-a9ba-4158-a8c4-7f501ed043e1")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR03"
 			(at 52.07 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -8486,7 +8637,7 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR026")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -8504,7 +8655,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bb871bf6-4e3b-4bca-a80f-f200a4a1daa9")
-		(property "Reference" "J9"
+		(property "Reference" "J2"
 			(at 68.58 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8608,7 +8759,120 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "J9")
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:RUEF400")
+		(at 236.22 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd8f1e58-632f-4fcb-a72d-d539b0bc216e")
+		(property "Reference" "F5"
+			(at 236.22 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RUEF400"
+			(at 236.22 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
+			(at 236.22 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2760163.pdf"
+			(at 236.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Littelfuse(美国力特)"
+			(at 236.22 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RUEF400"
+			(at 236.22 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2760163"
+			(at 236.22 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "901a7de9-6399-4aa8-9db2-5f6ae6b4c457")
+		)
+		(pin "1"
+			(uuid "27344cab-e454-47e7-9a1d-ce601ea8b6d5")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "F5")
 					(unit 1)
 				)
 			)
@@ -8626,7 +8890,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bdf78d99-472b-4ab6-b587-462fbc6213f8")
-		(property "Reference" "#FLG03"
+		(property "Reference" "#FLG01"
 			(at 34.29 94.615 0)
 			(hide yes)
 			(show_name no)
@@ -8686,15 +8950,15 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#FLG03")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PixelBlit:0402,47Ω")
-		(at 219.71 130.81 90)
+		(lib_id "PixelBlit:DB301V-3.5-3P-GN")
+		(at 251.46 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8702,29 +8966,33 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "c97bc6a1-3664-4025-a128-470001a89eba")
-		(property "Reference" "R7"
-			(at 219.71 127 90)
+		(fields_autoplaced yes)
+		(uuid "c08070e2-8937-41b5-93be-0edccea0d66b")
+		(property "Reference" "J4"
+			(at 255.27 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "47Ω"
-			(at 219.71 130.81 90)
+		(property "Value" "DB301V-3.5-3P-GN"
+			(at 255.27 45.7199 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "PixelBlit:R_0402"
-			(at 219.71 132.588 90)
+		(property "Footprint" "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
+			(at 251.46 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8734,8 +9002,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF470JTCE_C25118.pdf"
-			(at 219.71 130.81 0)
+		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_DIBO-DB301V-3-5-3P-GN_C695630.html"
+			(at 251.46 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8745,8 +9013,8 @@
 				)
 			)
 		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±1% ±200ppm/°C 47Ω 0402 Chip Resistor - Surface Mount ROHS"
-			(at 219.71 130.81 0)
+		(property "Description" ""
+			(at 251.46 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8756,184 +9024,8 @@
 				)
 			)
 		)
-		(property "LCSC" "C25118"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Stock" "468126"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" "0.004USD"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Process" "SMT"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" "12"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" "Preferred Component"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "0402WGF470JTCE"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Resistance" "47Ω"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power(Watts)" "62.5mW"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Type" "Thick Film Resistors"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Overload Voltage (Max)" "50V"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "±1%"
-			(at 219.71 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Temperature Coefficient" "±200ppm/°C"
-			(at 219.71 130.81 0)
+		(property "LCSC Part" "C695630"
+			(at 251.46 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8944,15 +9036,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "14bcd80b-73a0-445f-b95d-7dba55025633")
+			(uuid "dda878a2-3f58-415a-b14e-2e84952b5862")
+		)
+		(pin "3"
+			(uuid "b96aa86f-661c-41e0-bfb9-733457ca3c6b")
 		)
 		(pin "1"
-			(uuid "8405c729-6ace-456f-8f01-978050091acb")
+			(uuid "ac2ede44-6e37-4c99-aa4d-af8f7d50c5ae")
 		)
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "R7")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -8969,7 +9064,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cbab364f-ba68-4af4-a6dc-1d0ae47334ac")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR017"
 			(at 224.79 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -9029,7 +9124,89 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR012")
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 148.59 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cdc2e738-4287-4f71-846c-fbe7659b2d99")
+		(property "Reference" "C2"
+			(at 152.4 60.9599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 152.4 63.4999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
+			(at 149.5552 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 148.59 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5152d51e-6c34-47dc-a15d-7991502d1a45")
+		)
+		(pin "1"
+			(uuid "840ac7c4-0cf4-46cc-bf25-d32bfb55c768")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -9046,7 +9223,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d7608acd-f808-4953-b4cb-4e3925f05f12")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR015"
 			(at 224.79 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -9106,103 +9283,7 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PixelBlit:DB301V-3.5-3P-GN")
-		(at 240.03 151.13 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "dc06f282-64de-45e3-8220-7df5fd267a86")
-		(property "Reference" "J8"
-			(at 243.84 149.8599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DB301V-3.5-3P-GN"
-			(at 243.84 152.3999 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PixelBlit:CONN-TH_DB301V-3.5-3P-GN"
-			(at 240.03 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_DIBO-DB301V-3-5-3P-GN_C695630.html"
-			(at 240.03 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 240.03 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C695630"
-			(at 240.03 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "77b6e027-a40a-4dcb-9e09-cfbf5a3c269e")
-		)
-		(pin "3"
-			(uuid "d838f7c6-ee31-49fd-96f8-2e6d1cc62c66")
-		)
-		(pin "1"
-			(uuid "88f53594-5cbd-4766-be9b-e0dc8599c456")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "J8")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -9220,7 +9301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ddb86c7a-1567-40f2-90f3-879ff839f05f")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR021"
 			(at 232.41 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -9281,365 +9362,7 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PixelBlit:0402,47Ω")
-		(at 219.71 151.13 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dde70af0-fdb0-4c0f-a40c-d072ba0dc423")
-		(property "Reference" "R8"
-			(at 219.71 147.32 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47Ω"
-			(at 219.71 151.13 90)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-			)
-		)
-		(property "Footprint" "PixelBlit:R_0402"
-			(at 219.71 152.908 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF470JTCE_C25118.pdf"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±1% ±200ppm/°C 47Ω 0402 Chip Resistor - Surface Mount ROHS"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25118"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Stock" "468126"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" "0.004USD"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Process" "SMT"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" "12"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" "Preferred Component"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "0402WGF470JTCE"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Resistance" "47Ω"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power(Watts)" "62.5mW"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Type" "Thick Film Resistors"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Overload Voltage (Max)" "50V"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "±1%"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Temperature Coefficient" "±200ppm/°C"
-			(at 219.71 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0e32d407-7f96-4a80-87a5-e51e9b2258f8")
-		)
-		(pin "1"
-			(uuid "1ccccce4-08ae-4533-8f74-23dfedd7f202")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
-		(at 229.87 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "debbfbb6-da87-4c32-9c76-21edc3cd53da")
-		(property "Reference" "F4"
-			(at 230.886 73.914 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1812L400/16GR"
-			(at 229.87 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:F1812"
-			(at 229.87 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.87 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 229.87 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C22374900"
-			(at 229.87 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fb7f9e45-c2d8-4486-8dfc-9b18b59fcabc")
-		)
-		(pin "2"
-			(uuid "b06122b5-606d-4f16-a077-adcb910854db")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "F4")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -9658,7 +9381,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e31db067-5139-40fe-828e-289da0ab5d43")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR01"
 			(at 26.67 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -9718,7 +9441,120 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR024")
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:RUEF400")
+		(at 236.22 21.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e402a550-dba0-49c6-b696-c64ba882dfd5")
+		(property "Reference" "F1"
+			(at 236.22 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RUEF400"
+			(at 236.22 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:FUSE-TH_L14.0-W3.0-P5.08-D0.6"
+			(at 236.22 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2760163.pdf"
+			(at 236.22 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Littelfuse(美国力特)"
+			(at 236.22 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RUEF400"
+			(at 236.22 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2760163"
+			(at 236.22 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ac8596f1-3e1c-4e0f-b003-aaf7338b7076")
+		)
+		(pin "1"
+			(uuid "092a6481-d21a-4a95-8549-ab78e2ca1f30")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -9736,7 +9572,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7933795-730a-49d1-8b2d-5ca81b2fa58f")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR022"
 			(at 232.41 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -9797,195 +9633,7 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PixelBlit:DB301V-3.5-3P-GN")
-		(at 240.03 62.23 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ea1e661c-40d1-41ec-a1e3-4f79e304e5af")
-		(property "Reference" "J3"
-			(at 243.84 62.2299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DB301V-3.5-3P-GN"
-			(at 243.84 63.4999 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PixelBlit:CONN-TH_DB301V-3.5-3P-GN"
-			(at 240.03 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_DIBO-DB301V-3-5-3P-GN_C695630.html"
-			(at 240.03 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 240.03 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C695630"
-			(at 240.03 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d731ed50-9a05-49f3-9019-6f8fedd75eac")
-		)
-		(pin "3"
-			(uuid "0ddd4635-0b93-4a08-a6c4-a20a438033fd")
-		)
-		(pin "1"
-			(uuid "e975dd61-11e7-4029-a8e8-42952f350e56")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
-		(at 229.87 21.59 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "eef43fb6-cdd7-424c-a5f5-dafbd1610c3e")
-		(property "Reference" "F1"
-			(at 230.886 19.304 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1812L400/16GR"
-			(at 229.87 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:F1812"
-			(at 229.87 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.87 21.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 229.87 21.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C22374900"
-			(at 229.87 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0e62609b-2ed8-41f1-bb10-c261e6e37139")
-		)
-		(pin "2"
-			(uuid "1c9fc67b-7b71-4079-8c26-d4b24624e93b")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "F1")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -10003,7 +9651,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f09a7c10-8cac-42a8-9bdd-162845e0dda6")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR06"
 			(at 116.84 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -10063,7 +9711,85 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR01")
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 44.45 43.18 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f0b4063c-025f-4475-916d-6029d032c786")
+		(property "Reference" "#FLG03"
+			(at 44.45 45.085 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 44.45 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 44.45 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "33b111fa-5e0c-4dc3-9d37-2a23dae12616")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -10100,7 +9826,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PixelBlit:R_0402"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 219.71 25.908 90)
 			(hide yes)
 			(show_name no)
@@ -10111,7 +9837,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF470JTCE_C25118.pdf"
+		(property "Datasheet" ""
 			(at 219.71 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -10122,7 +9848,7 @@
 				)
 			)
 		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±1% ±200ppm/°C 47Ω 0402 Chip Resistor - Surface Mount ROHS"
+		(property "Description" ""
 			(at 219.71 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -10133,7 +9859,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25118"
+		(property "LCSC" ""
 			(at 219.71 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -10144,7 +9870,7 @@
 				)
 			)
 		)
-		(property "Stock" "468126"
+		(property "Stock" ""
 			(at 219.71 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -10155,7 +9881,7 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
+		(property "Price" ""
 			(at 219.71 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -10336,340 +10062,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PixelBlit:0402,100nF")
-		(at 148.59 62.23 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f17deeb4-5b43-4f4e-a4fe-4966f873cf37")
-		(property "Reference" "C2"
-			(at 146.05 59.6899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 146.05 62.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PixelBlit:C_0402"
-			(at 150.368 62.23 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
-			(at 148.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "16V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 148.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C1525"
-			(at 148.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Stock" "16712941"
-			(at 148.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" "0.004USD"
-			(at 148.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Process" "SMT"
-			(at 148.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 148.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Attrition Qty" "10"
-			(at 148.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" "Basic Component"
-			(at 148.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 148.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 148.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part" "CL05B104KO5NNNC"
-			(at 148.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage Rated" "16V"
-			(at 146.05 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-				(justify left)
-			)
-		)
-		(property "Tolerance" "±10%"
-			(at 148.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "capacitance" "100nF"
-			(at 148.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Temperature Coefficient" "X7R"
-			(at 148.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "25f47b85-9380-440f-8909-d1e5b9e625cc")
-		)
-		(pin "2"
-			(uuid "314e90b6-3ee7-43db-b873-0226388e18c8")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PixelBlit:DB301V-3.5-3P-GN")
-		(at 240.03 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f20aeb2d-fa4a-4e91-996a-9a7f78a7580b")
-		(property "Reference" "J4"
-			(at 243.84 78.7399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DB301V-3.5-3P-GN"
-			(at 243.84 80.0099 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PixelBlit:CONN-TH_DB301V-3.5-3P-GN"
-			(at 240.03 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_DIBO-DB301V-3-5-3P-GN_C695630.html"
-			(at 240.03 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 240.03 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C695630"
-			(at 240.03 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "06a6f3ec-c72b-448c-a642-606fad3b9985")
-		)
-		(pin "3"
-			(uuid "676c7e81-06a0-425d-8369-79b2933f790a")
-		)
-		(pin "1"
-			(uuid "f5a8a2c5-d32d-4340-b4f6-468dbf728dcb")
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PixelBlit:GND")
 		(at 232.41 114.3 0)
 		(unit 1)
@@ -10681,7 +10073,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2f7c792-02ea-4635-807f-ae0974145956")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR024"
 			(at 232.41 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -10742,7 +10134,273 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR019")
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PixelBlit:0402,47Ω")
+		(at 219.71 130.81 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f42dee05-3e24-445b-afc1-f3aa51178570")
+		(property "Reference" "R7"
+			(at 219.71 127 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47Ω"
+			(at 219.71 130.81 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+			(at 219.71 132.588 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" ""
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "12"
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0402WGF470JTCE"
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "47Ω"
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±200ppm/°C"
+			(at 219.71 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e9ca6f9b-659f-4486-b194-f2bcbad32daa")
+		)
+		(pin "1"
+			(uuid "83743c37-267a-4773-864b-1cb6ebd68683")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -10759,7 +10417,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f9994008-f327-42f0-8a2f-6f9b51cbc3ab")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR016"
 			(at 224.79 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -10819,7 +10477,104 @@
 		(instances
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "#PWR011")
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PixelBlit:DB301V-3.5-3P-GN")
+		(at 251.46 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa9640f2-277d-45f6-9af5-2598261d91ba")
+		(property "Reference" "J5"
+			(at 255.27 62.2299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DB301V-3.5-3P-GN"
+			(at 255.27 63.4999 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:CONN-TH_DB301V-3.5-3P-GN"
+			(at 251.46 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_DIBO-DB301V-3-5-3P-GN_C695630.html"
+			(at 251.46 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 251.46 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C695630"
+			(at 251.46 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1287cf69-6506-452c-b05c-20af5ccda10d")
+		)
+		(pin "3"
+			(uuid "7635c1b5-7d94-4d6a-a3cb-fd42b28cb726")
+		)
+		(pin "1"
+			(uuid "b8fb3dfd-38ef-4734-9508-053890b87135")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "J5")
 					(unit 1)
 				)
 			)
