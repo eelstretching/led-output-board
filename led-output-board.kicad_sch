@@ -860,9 +860,13 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom no)
@@ -870,7 +874,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "H"
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -879,8 +883,8 @@
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -911,7 +915,7 @@
 					)
 				)
 			)
-			(property "Description" "Mounting Hole without connection"
+			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -933,7 +937,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*"
+			(property "ki_fp_filters" "MountingHole*Pad*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -944,9 +948,9 @@
 					)
 				)
 			)
-			(symbol "MountingHole_0_1"
+			(symbol "MountingHole_Pad_0_1"
 				(circle
-					(center 0 0)
+					(center 0 1.27)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -954,6 +958,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -2905,12 +2929,6 @@
 		(uuid "4608d3c0-bd88-40f8-8719-0a8a4a1e3816")
 	)
 	(junction
-		(at 90.17 24.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "02578bd4-fca6-4087-a1cb-6b82cfd9e378")
-	)
-	(junction
 		(at 34.29 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2923,16 +2941,16 @@
 		(uuid "3249daf6-bc83-4a28-8714-8751d014ee42")
 	)
 	(junction
-		(at 71.12 24.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "37b745c3-38c2-48c1-902b-745c128a19d9")
-	)
-	(junction
 		(at 121.92 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "37ef4eae-b413-495f-b1ee-8de748c9f4e1")
+	)
+	(junction
+		(at 76.2 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4496a542-08b0-4c37-8a4a-63d1d4c7c641")
 	)
 	(junction
 		(at 53.34 91.44)
@@ -3001,6 +3019,12 @@
 		(uuid "f2ccbde9-7bcc-4fed-b86b-fccc66e7ca92")
 	)
 	(junction
+		(at 99.06 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f397cfc8-1f76-4f7a-83c9-49faa19383a9")
+	)
+	(junction
 		(at 138.43 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3057,6 +3081,16 @@
 			(type default)
 		)
 		(uuid "09bf012e-d969-4a75-8c9b-b5caa99ad154")
+	)
+	(wire
+		(pts
+			(xy 76.2 24.13) (xy 121.92 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b17e2df-134f-4204-a14e-e749d16d7131")
 	)
 	(wire
 		(pts
@@ -3220,16 +3254,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 17.78) (xy 71.12 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "379d3852-887d-4112-ae8a-5010b7e5f120")
-	)
-	(wire
-		(pts
 			(xy 53.34 83.82) (xy 53.34 86.36)
 		)
 		(stroke
@@ -3287,16 +3311,6 @@
 			(type default)
 		)
 		(uuid "4c7147ac-a980-477b-bb4e-54d025304fd2")
-	)
-	(wire
-		(pts
-			(xy 53.34 17.78) (xy 53.34 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4eb82cee-7887-4c73-bcf2-32037521b13d")
 	)
 	(wire
 		(pts
@@ -3390,26 +3404,6 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 17.78) (xy 107.95 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "632836c6-8c6a-4c63-897e-4fd60b268b4c")
-	)
-	(wire
-		(pts
-			(xy 71.12 24.13) (xy 53.34 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6588573c-10f3-4862-912f-db9caa82f8fd")
-	)
-	(wire
-		(pts
 			(xy 40.64 43.18) (xy 44.45 43.18)
 		)
 		(stroke
@@ -3457,16 +3451,6 @@
 			(type default)
 		)
 		(uuid "68c91bef-b4e0-4247-b403-716151f0c37a")
-	)
-	(wire
-		(pts
-			(xy 107.95 24.13) (xy 90.17 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69cff84b-67a6-46aa-9273-3805baeb71d6")
 	)
 	(wire
 		(pts
@@ -3800,16 +3784,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 17.78) (xy 90.17 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd99c5f4-30e8-4c9b-8471-43ae8857b57a")
-	)
-	(wire
-		(pts
 			(xy 53.34 78.74) (xy 53.34 81.28)
 		)
 		(stroke
@@ -3950,7 +3924,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 24.13) (xy 90.17 24.13)
+			(xy 53.34 24.13) (xy 76.2 24.13)
 		)
 		(stroke
 			(width 0)
@@ -4087,82 +4061,6 @@
 			(type default)
 		)
 		(uuid "ff9e4c7e-5004-43fd-8e81-79f16e61c8a7")
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 53.34 17.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "06c45677-5bc8-4deb-adb9-4dcf7523c464")
-		(property "Reference" "H1"
-			(at 55.88 16.5099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 55.88 19.0499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 53.34 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 53.34 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -4581,6 +4479,85 @@
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 53.34 21.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14013287-4677-4f59-8b0a-95aafd3ed6b5")
+		(property "Reference" "H1"
+			(at 55.88 19.0499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 55.88 21.5899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+			(at 53.34 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 53.34 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8695ff4e-0fdb-4851-bf07-0a03aa37af4a")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -6747,158 +6724,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 71.12 17.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "59875a28-caa4-4dd8-8729-9543c7a344d0")
-		(property "Reference" "H2"
-			(at 73.66 16.5099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 73.66 19.0499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 71.12 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 71.12 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 90.17 17.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5b29dccd-87b7-464e-b8e4-b53a0c6783d3")
-		(property "Reference" "H3"
-			(at 92.71 16.5099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 92.71 19.0499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 90.17 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 90.17 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 90.17 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PixelBlit:+12V")
 		(at 224.79 41.91 0)
 		(unit 1)
@@ -7336,6 +7161,85 @@
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
 					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 99.06 21.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70bfb2bf-324f-43fa-8069-6092f9113d89")
+		(property "Reference" "H3"
+			(at 101.6 19.0499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 101.6 21.5899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+			(at 99.06 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 99.06 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ce3ecb9d-24ce-4940-baca-4f144fc202d3")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -8296,82 +8200,6 @@
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 107.95 17.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a4a09c0d-9c6b-48be-b02d-47a63e4f3a67")
-		(property "Reference" "H4"
-			(at 110.49 16.5099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 110.49 19.0499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 107.95 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 107.95 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "led-output-board"
-				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
-					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -9791,6 +9619,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 121.92 21.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8b08d7a-20c3-4528-b259-3b132c0c8a0f")
+		(property "Reference" "H4"
+			(at 124.46 19.0499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 124.46 21.5899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+			(at 121.92 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 121.92 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7aaa7e97-ff00-4282-a385-fde78003108f")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PixelBlit:GND")
 		(at 232.41 64.77 0)
 		(unit 1)
@@ -10902,6 +10809,85 @@
 			(project "led-output-board"
 				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 76.2 21.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f51c2202-e89a-4425-ba1d-eb8acda952e3")
+		(property "Reference" "H2"
+			(at 78.74 19.0499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 78.74 21.5899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+			(at 76.2 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 76.2 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d1ba5773-b774-443c-9c70-f39f93fee45e")
+		)
+		(instances
+			(project "led-output-board"
+				(path "/ad2270e8-db6c-41b8-b875-f5850ca3388d"
+					(reference "H2")
 					(unit 1)
 				)
 			)
